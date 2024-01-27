@@ -81,17 +81,17 @@ nav div main{
 #historia header{
     background: linear-gradient(rgba(1,1,1,0.7), rgba(1,1,1,0.7)), url(historia.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 #jubileusz header{
     background: linear-gradient(rgba(1,1,1,0.7), rgba(1,1,1,0.7)), url(jubileusz.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 #zdiecia header{
     background: linear-gradient(rgba(1,1,1,0.7), rgba(1,1,1,0.7)), url(zdjecia.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 #powrothis, #powrotjub, #powrotzdj{
     position: absolute;
