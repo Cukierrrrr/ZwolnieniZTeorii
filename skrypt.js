@@ -36,9 +36,13 @@ function powHistoria(){
     document.querySelector('body').style.overflowY = 'scroll';
     document.getElementById("powrothis").style.opacity = '0';
     document.getElementById("powrothis").removeEventListener("click", powHistoria);
+    document.getElementById("historia").removeEventListener("scroll", scrollHistoria)
     xd.addEventListener("mouseover", nadHistorii);
     xd.addEventListener("mouseout", zaHistorii);
     xd.addEventListener("mouseout", naprawaH);
+}
+function scrollHistoria(){
+    document.getElementById("powrothis").style.top = document.getElementById("historia").scrollTop + 34 + 'px';
 }
 function Historia(){
     var xd =  document.getElementById("historia");
@@ -70,6 +74,7 @@ function Historia(){
     },250)
     document.getElementById("powrothis").style.opacity = '1';
     document.getElementById("powrothis").addEventListener("click", powHistoria);
+    document.getElementById("historia").addEventListener("scroll", scrollHistoria)
 }
 document.getElementById("historia").addEventListener("mouseover", nadHistorii)
 document.getElementById("historia").addEventListener("mouseout", zaHistorii)
@@ -111,9 +116,13 @@ function powJubileusz(){
     document.querySelector('body').style.overflowY = 'scroll';
     document.getElementById("powrotjub").style.opacity = '0';
     document.getElementById("powrotjub").removeEventListener("click", powJubileusz);
+    document.getElementById("jubileusz").removeEventListener("scroll", scrollJubileusz)
     xd.addEventListener("mouseover", nadJubileusz);
     xd.addEventListener("mouseout", zaJubileusz);
     xd.addEventListener("mouseout", naprawaJ);
+}
+function scrollJubileusz(){
+    document.getElementById("powrotjub").style.top = document.getElementById("jubileusz").scrollTop + 34 + 'px';
 }
 function Jubileusz(){
     var xd =  document.getElementById("jubileusz");
@@ -145,6 +154,7 @@ function Jubileusz(){
     },250)
     document.getElementById("powrotjub").style.opacity = '1';
     document.getElementById("powrotjub").addEventListener("click", powJubileusz);
+    document.getElementById("jubileusz").addEventListener("scroll", scrollJubileusz)
 }
 document.getElementById("jubileusz").addEventListener("mouseover", nadJubileusz)
 document.getElementById("jubileusz").addEventListener("mouseout", zaJubileusz)
@@ -187,9 +197,13 @@ function powZdjecia(){
     document.querySelector('body').style.overflowY = 'scroll';
     document.getElementById("powrotzdj").style.opacity = '0';
     document.getElementById("powrotzdj").removeEventListener("click", powZdjecia);
+    document.getElementById("zdiecia").removeEventListener("scroll", scrollZdjecia)
     xd.addEventListener("mouseover", nadZdjecia);
     xd.addEventListener("mouseout", zaZdjecia);
     xd.addEventListener("mouseout", naprawaZ);
+}
+function scrollZdjecia(){
+    document.getElementById("powrotzdj").style.top = document.getElementById("zdiecia").scrollTop + 34 + 'px';
 }
 function Zdjecia(){
     var xd =  document.getElementById("zdiecia");
@@ -221,6 +235,7 @@ function Zdjecia(){
     },250)
     document.getElementById("powrotzdj").style.opacity = '1';
     document.getElementById("powrotzdj").addEventListener("click", powZdjecia);
+    document.getElementById("zdiecia").addEventListener("scroll", scrollZdjecia)
 }
 document.getElementById("zdiecia").addEventListener("mouseover", nadZdjecia)
 document.getElementById("zdiecia").addEventListener("mouseout", zaZdjecia)
